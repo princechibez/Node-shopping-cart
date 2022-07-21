@@ -1,12 +1,9 @@
 {
-  "homepage": "http://princechibez.github.io/basics",
   "name": "nodejs-complete-guide",
   "version": "1.0.0",
   "description": "Complete Node.js Guide",
   "main": "app.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
     "start-server": "node app.js"
@@ -17,14 +14,24 @@
     "nodemon": "^1.18.3"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
+    "connect-mongodb-session": "^2.0.3",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "mongodb": "^4.6.0",
-    "mongoose": "^6.3.6",
-    "pug": "^2.0.3"
+    "express-session": "^1.15.6",
+    "express-validator": "^6.14.2",
+    "gravatar": "^1.8.2",
+    "mailgun-js": "^0.22.0",
+    "mongodb": "^3.1.6",
+    "mongoose": "^5.2.17",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^1.6.1",
+    "nodemailer": "^6.7.7",
+    "pug": "^2.0.3",
+    "sequelize": "^5.0.0-beta.11"
   }
 }
